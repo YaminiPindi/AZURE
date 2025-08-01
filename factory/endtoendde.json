@@ -1,0 +1,9 @@
+{
+	"name": "endtoendde",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7960566e-0deb-4a2f-897b-2afa21855bd3",
+		"tenantId": "46364ac1-d11d-4f14-ada1-b5580623c978"
+	}
+}
