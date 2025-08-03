@@ -1,8 +1,8 @@
 {
-	"name": "accessing",
+	"name": "Table",
 	"properties": {
 		"content": {
-			"query": "SELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks _Sales_2017',\n    FORMAT = 'PARQUET'\n    ) as q1",
+			"query": "",
 			"metadata": {
 				"language": "sql"
 			},

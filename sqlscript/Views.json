@@ -1,8 +1,8 @@
 {
-	"name": "SQL script 2",
+	"name": "Views",
 	"properties": {
 		"content": {
-			"query": "create view adventureworks \nas\nSELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks _Sales_2017',\n    FORMAT = 'PARQUET'\n    ) as q1",
+			"query": "create view adventureworks \nas\nSELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks _Sales_2017',\n    FORMAT = 'PARQUET'\n    ) as q1\n\ncreate view adventureworks_calender\nAS\n\nSELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks_Calendar',\n    FORMAT = 'PARQUET'\n    ) as q2\n\n\n    CREATE VIEW AdventureWorks_Customers\n    \n    AS\n    SELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks_Customers',\n    FORMAT = 'PARQUET'\n    ) as q2\n\n\n\n    CREATE VIEW AdventureWorks_Products\n    \n    AS\n    SELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks_Products',\n    FORMAT = 'PARQUET'\n    ) as q2\n\nCREATE VIEW AdventureWorks_Returns\n    \n    AS\n    SELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks_Returns',\n    FORMAT = 'PARQUET'\n    ) as q2\n\n\nCREATE VIEW AdventureWorks_Territories\n    \n    AS\n    SELECT *\n FROM \n OPENROWSET(\n    BULK 'https://endtoendde.dfs.core.windows.net/silver/AdventureWorks_Territories',\n    FORMAT = 'PARQUET'\n    ) as q2\n",
 			"metadata": {
 				"language": "sql"
 			},
